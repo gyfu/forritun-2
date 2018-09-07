@@ -59,14 +59,22 @@ def lidur1():
             print("\nVeldu tölu frá einum upp í fimm.\n")
 #lidur1()
 #Liður tvö:-----------------------------------------------------------
-def mkList(skjal):
-    nafnalisti=[]
-    with open(skjal, "r") as f:
-        for x in f.readlines():
-            sep = ";"
-            nafnalisti.append(x.split(sep,1)[0])
-        f.close
-    FOR=nafnalisti[0:6]
-    GSO=nafnalisti[3:12]
-    return FOR, GSO
-print(mkList("lykilord.txt"))
+def mkList(nafn):
+    num=int(input("Hve margir eru skráðir í hópinn {}: ".format(nafn)))
+    templist=[]
+    for x in range(num):
+        strengur=input("Gefðu nafn nemanda: ")
+        templist.append(strengur)
+    templist.sort()
+    return templist
+def lidur1():
+    FOR=mkList("FOR1TÖ05CU")
+    GSO=mkList("GSÖ1TÖ05AU")
+    while True:
+        print("FOR: ")
+        for x in FOR:   print(x)
+        print("\nGSÖ")
+        for x in GSO:   print(x)
+        break
+
+lidur1()
