@@ -59,6 +59,7 @@ def lidur1():
             print("\nVeldu tölu frá einum upp í fimm.\n")
 #lidur1()
 #Liður tvö:-----------------------------------------------------------
+<<<<<<< HEAD:old/verkefni1/main.py
 def mkList():
     numeric=int(input("Hve margir eru skráðir í hópinn: "))
     templist=[]
@@ -81,3 +82,24 @@ def listSize(list1, list2):
         return False
 def faeraNemendur():
     
+=======
+def mkList(nafn):
+    num=int(input("Hve margir eru skráðir í hópinn {}: ".format(nafn)))
+    templist=[]
+    for x in range(num):
+        strengur=input("Gefðu nafn nemanda: ")
+        templist.append(strengur)
+    templist.sort()
+    return templist
+def lidur1():
+    FOR=mkList("FOR1TÖ05CU")
+    GSO=mkList("GSÖ1TÖ05AU")
+    while True:
+        print("FOR: ")
+        for x in FOR:   print(x)
+        print("\nGSÖ")
+        for x in GSO:   print(x)
+        break
+
+lidur1()
+>>>>>>> 550b558ece271830f48f7c31b294aab6cb0379a2:verkefni1/main.py
