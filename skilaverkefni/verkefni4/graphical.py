@@ -25,7 +25,7 @@ class Circle(Shape):
     def __init__(self,speedX,speedY):
         self.speedX=speedX
         self.speedY=speedY
-        self.item=canvas.create_oval(30,30,10,10,fill="blue")
+        self.item=canvas.create_oval(30,30,10,10,fill="pink")
 class Triangle(Shape):
     def __init__(self,speedX,speedY):
         self.speedX=speedX
